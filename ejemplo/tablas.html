@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+    <style>
+    .tr1{
+        background-color: aqua;
+    }
+
+    .tr2{
+        background-color: bisque;
+    }
+
+    table{
+        border-collapse: collapse;
+    }
+    td{
+        border: 3px solid black;
+    }
+
+    th{
+        border: 3px solid red;
+    }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Tablas en HTML && CSS</h1>
+
+        <table border="1"> 
+            <tr class="tr1">
+                <th colspan="3">Nombre && Apellido</th>
+                
+                
+                <th>Distrito</th>           
+            </tr>
+
+            <tr class="tr2">
+                <td>Valentina</td>
+                <td>Caceres</td>
+                <td>20</td>
+                <td>La Molina</td>
+            </tr>
+
+            <tr  class="tr2">
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>100</td>
+                <td>Callao</td>
+            </tr>
+
+            <tr  class="tr2">
+                <td>Miguel</td>
+                <td>Andrade</td>
+                <td>50</td>
+                <td align="center">Manchay</td>
+            </tr>
+        </table>
+        <br>
+        <table id="tabla2">
+            <tr>
+                <th>Trilogia</th>
+                <th>Titulo</th>
+                <th>a_nos</th>
+            </tr>
+
+            
+            <tr>
+                <td rowspan="3">Original</td>
+                <td>Episodio IV: nueva esperanza</td>
+                <td>1990</td>
+            </tr>
+
+
+            <tr>
+                
+                <td>Episodio IV: nueva esperanza</td>
+                <td>1960</td>
+            </tr>
+
+            <tr>
+                
+                <td>Episodio IV: nueva esperanza</td>
+                <td>1910</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" style="text-align: center;">Episodio IV: ejemplo</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+</body>
+</html>

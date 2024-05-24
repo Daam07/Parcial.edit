@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="caja1">
+
+        <h3>Formulario de aceso</h3>
+        <form action="envio.php" method="get" name="Formulario1">
+        
+            <div><br>
+
+                Usario: <input type="text" 
+                name="usuario"><br><br>
+
+                Clave: <input type="password" name="clave">
+
+            </div>
+
+            <div class="button"><br>
+
+                <input type="submit"value="Aceptar">
+
+                <input type="reset" value="Limpiar">
+
+            </div>
+        </form>
+    </div>    
+
+    <div id="caja2">
+
+        <h3>Datos de texto</h3>
+        <form method="get" name="Formulario2">
+
+            <div>
+                <br>
+
+                Nombre:<input type="text" name="Nombre" 
+                placeholder="Ingrese su nombre"><br><br>
+
+                E-mail: <input type="email" name="email" placeholder="Nombre@gmail.com"><br><br>
+
+                celular <input type="tel" name="celular" placeholder="999 999 999" required><br><br>
+
+                Web:<input type="url" name="paginaweb" placeholder="http/www.dominio.com">
+
+            </div>
+
+            <div class="button"><br>
+
+                <input type="submit"value="Aceptar">
+                <input type="reset" value="Limpiar">
+
+            </div>
+
+        </form>
+    </div>
+
+
+    <div id="caja3">
+        
+        <h3>Datos numericos</h3>
+        <form action="formulario3" method="get">
+            <div>
+                <br>
+
+                Sueldo: <input type="number" name="sueldo" min="1000" max="2000" step="100">
+                <br><br>
+
+                Rango de edad: <input type="range" name="edad" min="18" max="50" step="1"> 
+            </div>
+
+            <div class="button"><br>
+
+                <input type="submit"value="Aceptar">
+
+                <input type="reset" value="Limpiar">
+
+            </div>
+        </form>
+    </div>
+
+
+    <div id="caja4">
+        <h3>Datos Fehcas y Hora</h3>
+        <form name="formulario4" method="get">
+            <div><br>
+                Fecha: <input type="date" name="fecha" min="2000-12-01" max="2010-12-01">
+                <br><br>
+                Hora: <input type="time" name="hora" min="09:00" max="20:00" step="3600">
+                <br><br>
+                Mes: <input type="month" name="mes">
+                <br><br>
+                Semana: <input type="week" name="semana">
+            </div>
+        
+            <div class="button"><br>
+
+                <input type="submit"value="Aceptar">
+
+                <input type="reset" value="Limpiar">
+
+            </div>
+        </form>
+    </div>
+
+    <div id="caja5">
+        <h3>Datos de seleccion</h3>
+        <form name="formulario5" method="get">
+            <br>
+            <p>Seleccione su comida favorita:</p>
+            <br>
+            <input type="checkbox" name="comida" value="marina" checked>Marina <br>
+
+            <input type="checkbox" name="comida" value="marina">Pasta<br>
+
+            <input type="checkbox" name="comida" value="marina">Parrilla<br>
+
+            <br>
+
+            <p>Documento de identidad</p><br>
+            
+            <input type="radio" name="documento" value="dni" checked>DNI <br>
+
+            <input type="radio" name="documento" value="pasaporte">Pasaporte <br>
+
+            <input type="radio" name="documento" value="carne de extranjeria">Carne de extranjeria
+
+            <br><br>
+
+            <p>Seleccione su pais de origen</p>
+            <select name="pais">
+                
+                <option value="peru">Peru</option>
+                <option value="argentina">Argentina</option>
+                <option value="colombia" selected>Colombia</option>
+            </select>
+
+
+        </form>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
