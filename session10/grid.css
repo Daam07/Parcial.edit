@@ -1,0 +1,46 @@
+#contenedor{
+    display: grid;
+    grid-template-areas:
+
+    "header header header"/*si quieres ingresar otro contenido, debebs poner header otra vez, esto es como selectores, el que manda*/
+    "nav article section"
+    "fooder fooder fooder";
+
+    grid-template-columns: 1fr 3fr 3fr; /*configura el tamano de las cajas*/
+    gap: 10px;/*separa la columnas*/
+
+    width: 80%;
+    margin: auto;
+    
+
+}
+h1, h2, .pie{
+    text-align: center;
+}
+
+p{margin-left: 10px;
+margin-right: 10px;}
+
+#contenedor div{
+    border: 1px solid black;
+}
+
+.cabezera{
+    background-color: skyblue;
+    grid-area: header;
+}
+
+.articulo{
+    background-color: bisque;
+    grid-area:article;
+}
+
+.pie{
+    background-color: aqua;
+    grid-area: fooder;
+}
+
+.sesiones{
+    background-color: rgb(123, 123, 135);
+    grid-area: section;
+}

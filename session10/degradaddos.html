@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+            width: 600px;
+            height: 100px;
+            border: 1px solid rgb(0, 0, 0);
+            margin: 10px
+        }
+        .uno{
+            background: linear-gradient(to left, red, black, orange);
+        }
+
+        .dos{
+            background: linear-gradient(to bottom right, blue, skyblue);
+        }
+
+        .tres{
+            background: linear-gradient(10deg, red, blue)
+        }
+
+        .cuatro{
+            background: linear-gradient(to right, red 25%, violet 50%, black 100%);
+        }
+
+        .cinco{
+            background: repeating-linear-gradient(50deg, blue, blue, blue 5px, black 5px, black 10px);
+        }
+
+        
+        .box{
+            height: 200px;
+            width: 500px;
+            border: 1px solid black;
+            margin: 10px;}
+
+        .seis{
+            background: radial-gradient(circle at 50%, green, white);
+        }
+
+        .ocho{
+            background: radial-gradient(circle at 100%, red 34%, green);
+        }
+        
+        .nueve{
+            background: radial-gradient(circle 200px at center, blue 25%, skyblue 75%, white 100%);
+        }
+
+        .dies{
+            background: repeating-radial-gradient( rgb(0, 0, 0) 10%, black 20%, rgb(75, 51, 212) 30%)
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Degradados lineales</h2>
+        <div class="caja uno"></div>
+        <div class="caja dos"></div>
+        <div class="caja tres"></div>
+        <div class="caja cuatro"></div>
+        <div class="caja cinco"></div>
+        
+        <h2>Degradados lineales</h2>
+        <div class="box seis"></div>
+        <div class="box ocho"></div>
+        <div class="box nueve"></div>
+        <div class="box dies"></div>
+        <div class="box once"></div>
+    </main>
+
+
+
+</body>
+</html>
